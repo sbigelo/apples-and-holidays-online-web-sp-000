@@ -64,7 +64,7 @@ holiday_hash.map do |key, value|
   value.map do |key1, value1|
     key1 if value1.include?("BBQ")
     end
-  end.compact
+  end.flatten.compact
 end
 
 
